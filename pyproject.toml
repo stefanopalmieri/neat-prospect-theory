@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "neat-prospect-theory"
+version = "0.1.0"
+description = ""
+authors = ["stefanopalmieri <stefano.r.palmieri@gmail.com>"]
+readme = "README.md"
+packages = [{include = "neat_prospect_theory"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+neat-python = "^0.92"
+notebook = "^6.5.4"
+matplotlib = "^3.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
