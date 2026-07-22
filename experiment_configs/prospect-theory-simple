@@ -1,7 +1,11 @@
 #--- parameters for the prospect theory experiment ---#
 
+# Fitness is the fraction of foraging episodes a genome survives (0..1), so it
+# must be MAXIMISED. The original `min` criterion would have tracked the worst
+# survivor in the population. Early termination stays disabled because a
+# survival rate of exactly 1.0 is not attainable in a stochastic environment.
 [NEAT]
-fitness_criterion = min
+fitness_criterion = max
 fitness_threshold = 1.0
 no_fitness_termination = True
 pop_size              = 300

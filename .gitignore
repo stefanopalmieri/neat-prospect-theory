@@ -1,3 +1,16 @@
 neat-checkpoint-*
 
 .ipynb_checkpoints
+
+__pycache__/
+*.pyc
+
+# notebook plot artifact
+avg_fitness.svg
+
+# notebook HTML export
+prospect_theory_experiment.html
+
+# local tooling / reference material
+uv.lock
+ssrn-1008034.pdf
